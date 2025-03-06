@@ -1,0 +1,136 @@
+* {
+    color: rgb(253,245,230);
+    border: none;
+    font-size: 13px;
+    font-family: "FiraCode Nerd Font", "Noto Sans", "Liberation Sans";
+    border-radius: 20px;
+}
+
+/************************/
+
+window#waybar {
+    background-color: transparent;
+    color: rgb(235, 219, 178);
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*************************/
+
+.modules-left, .modules-center, .modules-right  {
+    margin: 10px 0 0 0;
+    background-color: #1b1b1b;
+}
+
+.modules-right {
+    margin-right: 10px;
+}
+
+.modules-left {
+    margin-left: 10px;
+}
+/*************************/
+
+/*--- Menu Launcher ---*/
+#custom-menu {
+   /*background: rgb(83,104,149);*/
+    background: linear-gradient(122deg, rgba(83, 104, 149, 1) 0%, rgba(93, 137, 186, 1) 80%);
+    color: rgb(229, 228, 226);
+    padding: 2px 12px 2px 10px;
+    margin-right: 6px;
+}
+
+#custom-menu:hover {
+    background-color: rgb(67, 107, 149);
+    color: rgb(253, 245, 230);
+}
+
+/*--- Workspaces ---*/
+
+#workspaces button {
+    /*color: rgba(245, 222, 179, 1);*/
+    margin: 0 0 0 0;
+    padding: 0 7px 0 10px;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    /*background: rgb(83,104,149);*/
+    background: linear-gradient(122deg, rgba(83, 104, 149, 1) 0%, rgba(93, 137, 186, 1) 80%);
+}
+
+#workspaces button.focused {
+    /*background: rgb(0,49,83);*/
+    background: linear-gradient(178deg, rgba(0, 49, 83, 0.8673670151654411) 0%, rgba(0, 65, 106, 0.8169468470982143) 85%);
+}
+
+#workspaces button.urgent {
+    color: rgba(171, 78, 82, 0.7);
+}
+
+/*--- Scratchpad, Mode & Clock ---*/
+
+#scratchpad, #mode, #clock{
+    
+    /*color: rgba(245, 222, 179, 1);*/
+    color: rgb(114, 160, 193);
+    margin: 0 0 0 0;
+    padding: 0 10px;
+}
+
+
+/*--- Wireplumber ---*/
+
+#wireplumber {
+    /*background: rgb(196, 98 , 16);*/
+    background: linear-gradient(175deg, rgba(196, 98, 16, 0.8) 0%, rgba(255, 168, 18, 0.7) 95%);
+    margin: 5px 6px 3px 6px;
+    padding: 3px 7px 3px 6px;
+}
+
+#wireplumber.muted{
+    background: rgb(132,27,45);
+    background: linear-gradient(175deg, rgba(132,27,45,1) 0%, rgba(146,0,10,1) 95%);
+    padding: 3px 7px 3px 6px;
+}
+
+/*--- Power Buttom ---*/
+
+#custom-power {
+    /*background: rgb(146,0,10);*/
+    background: linear-gradient(156deg, rgba(146, 0, 10, 1) 0%, rgba(112, 28, 28, 1) 78%);
+    color: rgb(229, 228, 226);
+    padding: 2px 17px 2px 12px;
+}
+
+#custom-power:hover {
+    background-color: #65000b;
+    color: rgb(253, 245, 230);
+}
+
+#disk, #temperature, #memory, #cpu {
+    /*background: rgb(0,49,83);*/
+    background: linear-gradient(178deg, rgba(0, 49, 83, 0.8673670151654411) 0%, rgba(0, 65, 106, 0.8169468470982143) 85%);
+    color: rgb(229,228,226);
+    margin: 5px 6px 3px 6px;
+    padding: 3px 8px 3px 6px;
+}
+
+#disk {
+    margin-left: 13px;
+}
+
+#taskbar, #tray {
+    /*background: rgb(119,139,165);*/
+    background: linear-gradient(178deg, rgba(119, 139, 165, 0.7) 0%, rgba(96, 130, 182, 0.7) 85%);
+    margin-right: 5px;
+    padding: 2px 11px 2px 11px;
+}
+
+#taskbar.empty {
+    background-color: transparent;
+}

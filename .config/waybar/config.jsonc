@@ -1,0 +1,39 @@
+// -*- mode: jsonc -*-
+
+{
+    "height": 40,
+    "name": "topbar",
+    "layer": "top",
+    "position": "top",
+    "mode": "dock",
+    "fixed-center": true,
+    "exclusive": true,
+    "spacing": 2,
+    "passthrough": false,
+    "reload_style_on_change": true,
+    "output": ["HDMI-A-3"],
+    "include": ["$HOME/.config/waybar/modules.jsonc"],
+
+    "modules-left": [
+        "custom/menu", 
+        "wlr/taskbar", 
+        "sway/workspaces", 
+        "sway/scratchpad", 
+        "sway/mode"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "disk", 
+        "temperature", 
+        "memory", 
+        "cpu",
+        "wireplumber", 
+        "tray", 
+        "custom/power"
+    ]
+
+}

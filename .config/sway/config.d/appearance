@@ -1,0 +1,41 @@
+### Sway WM Colors ###
+# class                 border  bground text    indicator child_border
+client.focused          #1B1B1B #080808 #FFFAF0 #6699CC   #1B1B1B
+client.focused_inactive #708090 #708090 #FDFFF5 #6082B6   #708090
+client.unfocused        #100C08 #1B1B1B #C0C0C0 #545AA7   #100C08
+client.urgent           #7C0A02 #800020 #faebd7 #92000A   #7C0A02
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+client.background       #FFFFFF
+
+### Window settings ###
+default_border pixel 4
+#default_floating_border normal
+#title_align center
+
+### Status Bar ###
+# Read `man 5 sway-bar` for more information about this section.
+
+bar {
+swaybar_command waybar
+}
+
+### Gaps ###
+gaps inner 8px
+gaps outer 10px
+
+### Sway WM Font ###
+font pango:SF Pro Rounded 10
+
+### Sway WM  Cursor Theme ###
+seat seat0 xcursor_theme Sweet-cursors 24
+
+### GTK Themes - Icons - Cursor - Font ###
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Juno'
+    gsettings set $gnome-schema icon-theme 'rami-gray'
+    gsettings set $gnome-schema cursor-theme 'Sweet-cursors'
+    gsettings set $gnome-schema font-name 'SF Pro Rounded'
+}

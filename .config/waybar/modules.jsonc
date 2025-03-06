@@ -1,0 +1,144 @@
+// -*- mode: jsonc -*-
+{  
+// ---- Modules Left ---- //
+
+// -- Menu Launcher -- //
+    "custom/menu": {
+        "format": "󱓞",
+        "on-click": "exec nwg-drawer",
+        "tooltip": false
+    },
+
+// -- Sway Workspaces -- //
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        },
+        "format": "{icon}",
+        "format-icons": {
+            "1":"󰻃",
+            "2":"󰻃",
+            "3":"󰻃",
+            "4":"󰻃",
+            "5":"󰻃",
+            "urgent": "󰀨",
+            "focused": "󰝥",
+            "default": "󰻃",
+
+        }
+    },
+// -- Taskbar -- //
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 14,
+        "icon-theme": "kora",
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+
+// -- Sway Mode -- //
+    "sway/mode": {
+        "format": "{}"
+    },
+
+// -- Scratchpad -- //
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+
+
+// ---- Modules Center ----
+
+// -- Clock -- //
+    "clock": {
+        "format": "{:%R 󱑂   %Od %b %y} 󰸗",
+        "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+        "tooltip": true,
+        "tooltip-format": "{calendar} {tz_list}",
+        "calendar": {
+            "mode":"month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months":     "<span color='#d3d3d3'><b>{}</b></span>",
+                "days":       "<span color='#e5e4e2'><b>{}</b></span>",
+                "weeks":      "<span color='#99badd'><b>S{}</b></span>",
+                "weekdays":   "<span color='#d1bea8'><b>{}</b></span>",
+                "today":      "<span color='#ff7f50'><b><u>{}</u></b></span>"
+            }
+    },
+},
+
+// ---- Modules Right ----
+
+// -- Power Buttom -- //
+    "custom/power": {
+        "format": "",
+        "on-click": "nwg-bar -x",
+        "tooltip": false
+    },
+
+// -- System Tray -- //
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+},
+
+// -- Wireplumber -- //
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "󰝟",
+        "on-click": "pavucontrol",
+        "format-icons": ["󰕿", "󰖀", "󰕾"]
+    },
+
+// -- CPU Load -- //  
+    "cpu": {
+        "interval": 10,
+        "format": "{}% 󰻠",
+        "max-length": 10
+    },
+
+// -- Memory in use -- //
+    "memory": {
+        "interval": 30,
+        "format": "{used:0.1f}G {total:0.1f}G 󰍛"
+    },
+
+// -- CPU Temperature -- //
+    "temperature": {
+        "thermal-zone": 0,
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC} 󰔄  󰸁",
+        "format": "{temperatureC}󰔄 󰔏"
+    },
+
+// -- Disk in use & free -- //
+    "disk": {
+        "interval": 30,
+        "format": "{specific_free:0.2f} GB {specific_total:0.2f} GB 󰋊",
+        "unit": "GB",
+    },
+}
