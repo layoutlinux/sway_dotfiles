@@ -1,0 +1,10 @@
+alias -g inst='sudo pacman -Sy --needed' 
+alias -g uppac='sudo pacman -Syyu'
+alias -g upaur='yay -Su'
+alias -g cleanl='profile-cleaner l'
+alias -g cleanc='profile-cleaner c'
+alias -g cleanp='profile-cleaner p'
+
+alias -g ls=lsd
+alias -g df=duf
+alias -g du=gdu
