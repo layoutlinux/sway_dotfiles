@@ -31,6 +31,8 @@ if [[ -r ~/.aliaszsh ]]; then
     . ~/.aliaszsh
   fi
 
+## Kitty ssh kitten 
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 ## Powerline Shell ##
 # https://github.com/b-ryan/powerline-shell
