@@ -1,0 +1,15 @@
+[user]
+	name = Julio Mena
+	email = layoutlinux@protonmail.com
+
+## Kitten Kitty-Diff
+[diff]
+    tool = kitty
+    guitool = kitty.gui
+[difftool]
+    prompt = false
+    trustExitCode = true
+[difftool "kitty"]
+    cmd = kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+    cmd = kitten diff $LOCAL $REMOTE
