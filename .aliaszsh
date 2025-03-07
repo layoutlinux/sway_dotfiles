@@ -8,3 +8,9 @@ alias -g cleanp='profile-cleaner p'
 alias -g ls=lsd
 alias -g df=duf
 alias -g du=gdu
+
+
+### Kittens from Kitty Terminal ###
+alias -g icat="kitten icat"
+alias -g diff="kitten diff"
+
